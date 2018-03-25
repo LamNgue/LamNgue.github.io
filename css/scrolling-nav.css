@@ -63,7 +63,7 @@ textarea,button {
 	margin-top: 1em;
 }
 
-.btn-group button {
+.inline button {
 	color: black;
 	background: none;
 	display: inline;
@@ -72,6 +72,12 @@ textarea,button {
 	border: 2px solid black;	
 	border-radius: 50%;
 }
+
+.inline button a i {
+	color: white;
+	font-size: 1em;
+}
+
 .titles{
 	margin-top: -8%;
 	margin-bottom: 5%;
