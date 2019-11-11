@@ -8,7 +8,7 @@ header {
   padding: 154px 0 100px;
   background-image: url("http://static.asiawebdirect.com/m/.imaging/1140x760/website/bangkok/portals/vietnam/homepage/hanoi/top10/top10-hanoi-attractions/pagePropertiesImage.jpg");
   background-size: cover;
-  background-position:center;
+  background-position: center;
   opacity: 0.6;
   top: 0;
   left: 0;
@@ -17,9 +17,9 @@ header {
   z-index: -1;
 }
 
-h1{
-	font-family: "Orbitron", sans-serif;
-	font-size: 40px;
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 40px;
 }
 
 @media (min-width: 992px) {
@@ -33,61 +33,62 @@ section {
 }
 
 hr {
-	height: 3px;
-	border: 1px solid grey;
-	background: gray;
-	margin: 3em;
-	}
+  height: 3px;
+  border: 1px solid grey;
+  background: gray;
+  margin: 3em;
+}
 
-hr::after{
-	font-family: 'Fjalla One', sans-serif;
-	font-size: 1.5em;
-	content: "</>";
-	color: grey;
-	position: relative;
-	top: -17px;
-	left: 50%;
-	border: 5px solid white;
-	background: white;
+hr::after {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.5em;
+  content: "</>";
+  color: grey;
+  position: relative;
+  top: -17px;
+  left: 50%;
+  border: 5px solid white;
+  background: white;
 }
-.atext{
-	margin-top: -7%;
+.atext {
+  margin-top: -7%;
 }
-#messageMePls{
-	font-size: 1.5em;
-	font-family: 'Poppins', sans-serif;;
+#messageMePls {
+  font-size: 1.5em;
+  font-family: "Poppins", sans-serif;
 }
 
 input,
-textarea,button {
-	margin-top: 1em;
+textarea,
+button {
+  margin-top: 1em;
 }
 
 .inline button {
-	color: black;
-	background: none;
-	display: inline;
-	width: 2em;
-	height: 2em;
-	border: 2px solid black;	
-	border-radius: 50%;
+  color: black;
+  background: none;
+  display: inline;
+  width: 2em;
+  height: 2em;
+  border: 2px solid black;
+  border-radius: 50%;
 }
 
 .inline button a i {
-	color: white;
-	font-size: 1em;
+  color: white;
+  font-size: 1em;
 }
 
-.titles{
-	margin-top: -8%;
-	margin-bottom: 5%;
+.titles {
+  margin-top: -8%;
+  margin-bottom: 5%;
 }
-#profilePic{
-	position: absolute;
-    left: 20%;
-    border: 5px solid black;
-    height: 300px;
-    width: 300px;
-    border-radius: 5%;
+#profilePic {
+  position: absolute;
+  left: 15%;
+  border: 5px solid black;
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5%;
 }
-

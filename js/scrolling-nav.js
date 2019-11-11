@@ -1,6 +1,6 @@
 (function($) {
   "use strict"; // Start of use strict
-
+  var description = ["A junior student at Gustavus Adolphus College", "A passionate developer", "An avid learner", "A hard-worker", "A responsible team member"];
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -26,4 +26,13 @@
     offset: 54
   });
 
+    function fadeContent(){
+      var text = description[Math.floor(Math.random() * description.length)];
+      $("#aboutMe").fadeIn(500).delay(2000).fadeOut(500, function(){
+        $("#aboutMe").html(text);
+        fadeContent();
+      });
+    }   
+  fadeContent(); 
 })(jQuery); // End of use strict
+
