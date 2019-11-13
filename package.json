@@ -11,11 +11,6 @@
     "theme",
     "template"
   ],
-  "homepage": "https://startbootstrap.com/template-overviews/scrolling-nav",
-  "bugs": {
-    "url": "https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/issues",
-    "email": "feedback@startbootstrap.com"
-  },
   "license": "MIT",
   "author": "Start Bootstrap",
   "contributors": [
