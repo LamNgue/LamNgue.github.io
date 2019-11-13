@@ -46,3 +46,11 @@ gulp.task('dev', ['browserSync'], function() {
   gulp.watch('./js/*.js', browserSync.reload);
   gulp.watch('./*.html', browserSync.reload);
 });
+
+gulp.task('watch', function(){
+  gulp.watch('index.html', ['build']);
+});
+
+gulp.task('build', function () {
+  // your code
+});
