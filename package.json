@@ -26,17 +26,19 @@
     "url": "git+https://github.com/BlackrockDigital/startbootstrap-scrolling-nav.git"
   },
   "dependencies": {
-    "bootstrap": "4.0.0",
-    "jquery": "3.3.1",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
     "jquery.easing": "^1.4.1",
     "netlify-cli": "^2.21.0"
   },
   "devDependencies": {
-    "browser-sync": "2.23.6",
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.1",
+    "surge": "^0.21.3"
   },
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run "
   }
 }
