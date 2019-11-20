@@ -89,6 +89,7 @@ button {
   width: 50%;
   max-width: 300px;
   height: auto;
+  max-height: 270px;
 }
 
 .overlay {
