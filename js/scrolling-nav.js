@@ -1,6 +1,5 @@
 (function ($) {
   "use strict"; // Start of use strict
-  var description = ["A junior student at Gustavus Adolphus College", "A passionate developer", "An avid learner", "A hard-worker", "A responsible team member"];
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -26,14 +25,47 @@
     offset: 54
   });
 
+  var wordIdx = 0;
+  var isDeleting = false;
+  var description = ["A junior student at Gustavus Adolphus College", "A passionate developer", "An avid learner", "A hard-worker", "A responsible team member"];
+  var wait = parseInt(1000, 10);
+  var text = "";
 
   function fadeContent() {
-    var text = description[Math.floor(Math.random() * description.length)];
-    $("#aboutMe").fadeIn(500).delay(2000).fadeOut(500, function () {
-      $("#aboutMe").html(text);
-      fadeContent();
-    });
+    var fullText = description[wordIdx];
+    if(isDeleting){
+      text = fullText.substring(0, text.length - 1);
+    }else{
+      text = fullText.substring(0, text.length + 1);
+    }
+
+    $("#aboutMe").html(`<span class='txt-me'><span class='blinking-cursor'>${text}</span></span>`);
+    
+    
+    var typeSpeed = 60;
+    if(isDeleting){
+      typeSpeed /= 2;
+    }
+    // If word is complete
+    if (!isDeleting && text === fullText) {
+      // Make pause at end
+      typeSpeed = wait;
+      // Set delete to true
+      isDeleting = true;
+    } else if (isDeleting && text === '') {
+      isDeleting = false;
+      // Move to next word
+      wordIdx++;
+      if (wordIdx == description.length) {
+        wordIdx = 0;
+      }
+      // Pause before start typing
+      typeSpeed = 500;
+    }
+    //Call function again
+    setTimeout(() => fadeContent(), typeSpeed);
   }
   fadeContent();
+
 })(jQuery); // End of use strict
 

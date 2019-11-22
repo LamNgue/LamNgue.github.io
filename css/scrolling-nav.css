@@ -17,9 +17,9 @@ header {
   z-index: -1;
 }
 
-h1 {
+.myName {
   font-family: "Orbitron", sans-serif;
-  font-size: 40px;
+  font-size: 45px;
 }
 
 @media (min-width: 992px) {
@@ -90,6 +90,21 @@ button {
   max-width: 300px;
   height: auto;
   max-height: 270px;
+}
+
+#aboutMe > .txt-me{
+  border-right: 0.2rem solid #777;
+  font-size: 20px;
+}
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 25px;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
 }
 
 .overlay {
