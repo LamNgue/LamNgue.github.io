@@ -17,10 +17,6 @@ header {
   z-index: -1;
 }
 
-.myName {
-  font-family: "Orbitron", sans-serif;
-  font-size: 45px;
-}
 
 @media (min-width: 992px) {
   header {
@@ -138,4 +134,9 @@ button {
 
 .nav-item {
   font-family: 'Montserrat', sans-serif;
+}
+
+.myName {
+  font-family: "Orbitron", sans-serif;
+  font-size: 45px;
 }
