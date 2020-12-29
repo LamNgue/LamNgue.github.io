@@ -90,12 +90,10 @@ button {
   margin-bottom: 5%;
 }
 #profilePic {
-  position: absolute;
-  left: 25%;
-  width: 50%;
   max-width: 300px;
   height: auto;
   max-height: 270px;
+  margin-bottom: 10px;
 }
 
 #aboutMe > .txt-me{
