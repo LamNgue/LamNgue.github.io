@@ -5,12 +5,13 @@
  */
 
 header {
-  background-image: url("http://static.asiawebdirect.com/m/.imaging/1140x760/website/bangkok/portals/vietnam/homepage/hanoi/top10/top10-hanoi-attractions/pagePropertiesImage.jpg"); 
+  display: none;
+  /* background-image: url("http://static.asiawebdirect.com/m/.imaging/1140x760/website/bangkok/portals/vietnam/homepage/hanoi/top10/top10-hanoi-attractions/pagePropertiesImage.jpg"); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.8; */
 }
 
 #intro {
@@ -150,6 +151,19 @@ button {
 
 .projectD:hover .overlay{
 	opacity: 0.8;
+}
+
+
+#exp {
+  display: none;
+}
+
+#contact {
+  display: none;
+}
+
+footer {
+  display: none;
 }
 
 .moreInfo {

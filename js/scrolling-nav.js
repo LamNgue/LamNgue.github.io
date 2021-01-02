@@ -1,17 +1,18 @@
-
 (function ($) {
   "use strict"; // Start of use strict
   // Smooth scrolling using jQuery easing
-  $("header").hide();
-  $("#exp").hide();
-  $("#contact").hide();
-  $("footer").hide();
-  $("#loading-home").fadeOut(3000, function() {
-    $("header").fadeIn(1000);
+  $("#loading-home").fadeOut(3000, function () {
+    $("header").show(function () {
+      $(this).css('background-image', 'url(' + 'http://static.asiawebdirect.com/m/.imaging/1140x760/website/bangkok/portals/vietnam/homepage/hanoi/top10/top10-hanoi-attractions/pagePropertiesImage.jpg' + ')')
+      $(this).css('background-size', 'cover');
+      $(this).css('opacity', 0.8);
+      fadeContent();
+    });
     $("#exp").show();
     $("#contact").show();
     $("footer").show();
   });
+
   $("#footer").hide(function() {
     $("#about").hide(1000, function () {
       $("#loading").hide(1000, function () {
@@ -50,25 +51,7 @@
   var description = ["A senior student at Gustavus Adolphus College", "A passionate developer", "An avid learner", "A hard-worker", "A responsible team member"];
   var wait = parseInt(1000, 10);
   var text = "";
-  var images = [
-    "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f7/12/caption.jpg?w=1000&h=600&s=1",
-    "https://hips.hearstapps.com/hbz.h-cdn.co/assets/16/34/1472241162-hbz-hanoi-index.jpg",
-    "https://mlraan0pnurx.i.optimole.com/c32lz_w-2PYW1gtb/w:1040/h:603/q:auto/https://opengovasia.com/wp-content/uploads/2019/02/08.02.2018-hanoi-smart-city-1.jpg",
-    "http://static.asiawebdirect.com/m/.imaging/1140x760/website/bangkok/portals/vietnam/homepage/hanoi/top10/top10-hanoi-attractions/pagePropertiesImage.jpg",
-    "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/05/11/10/hanoi-main.jpg?width=982&height=726"
-  ];
-  var index = 0;
 
-  if (!$("header").is(':hidden')) {
-    setInterval(change_up, 5000);
-  }
-  function change_up() {
-    index = (index + 1 < images.length) ? index + 1 : 0;
-    $("header").fadeOut(600, function () {
-      $(this).css('background-image', 'url(' + images[index] + ')')
-      $(this).fadeIn(600);
-    });
-  }
 
   function fadeContent() {
     var fullText = description[wordIdx];
@@ -104,7 +87,6 @@
     //Call function again
     setTimeout(() => fadeContent(), typeSpeed);
   }
-  fadeContent();
 
 })(jQuery); // End of use strict
 
