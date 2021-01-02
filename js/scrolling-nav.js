@@ -2,7 +2,6 @@
 (function ($) {
   "use strict"; // Start of use strict
   // Smooth scrolling using jQuery easing
-
   $("header").hide();
   $("#exp").hide();
   $("#contact").hide();
@@ -60,12 +59,11 @@
   ];
   var index = 0;
 
-  setInterval(change_up, 5000);
+  if (!$("header").is(':hidden')) {
+    setInterval(change_up, 5000);
+  }
   function change_up() {
     index = (index + 1 < images.length) ? index + 1 : 0;
-    if ($("header").is(':hidden')) {
-      return;
-    }
     $("header").fadeOut(600, function () {
       $(this).css('background-image', 'url(' + images[index] + ')')
       $(this).fadeIn(600);
