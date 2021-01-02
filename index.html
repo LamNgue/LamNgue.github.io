@@ -25,21 +25,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
-
 <body id="page-top">
+
+  <div id="loading-home">
+    <img id="loading-image" src="./static/giphy.gif" alt="Loading..." />
+  </div>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-secondary" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <img src="./static/Logo.PNG" style="margin-bottom: 3px;" width="40" height="40" alt="Personal logo" />
-      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item font-weight-bold text-white">
+            <a class="nav-link navbar-brand js-scroll-trigger" href="#exp">Experiences</a>
+          </li>
           <li class="nav-item font-weight-bold text-white">
             <a class="nav-link navbar-brand js-scroll-trigger" href="./about.html">About Me</a>
           </li>
@@ -51,7 +55,7 @@
       </div>
     </div>
   </nav>
-  <header>
+  <header id="intro">
     <div class="container fill text-center">
       <div id="intro">
         <p class="myName text-white">Lam Nguyen</p>
@@ -60,10 +64,10 @@
     </div>
   </header>
 
-  <section id="services" class="bg-light">
+  <section id="exp" class="bg-light">
     <div class="container">
       <div class="titles text-center" id="messageMePls">
-        <h2><b>Projects</b></h2>
+        <h2><b>Experiences</b></h2>
         <span> Below are some of my work experiences and personal/team projects. Technologies used: HTML/CSS, Angular, Spring Boot,
           JavaScript, jQuery, Golang,
           React and NodeJS.

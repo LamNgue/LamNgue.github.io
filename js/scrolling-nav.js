@@ -2,9 +2,23 @@
 (function ($) {
   "use strict"; // Start of use strict
   // Smooth scrolling using jQuery easing
-  $("#about").hide(2000,function() {
-    $("#loading").hide(1000,function() {
-      $("#about").fadeIn(2000);
+
+  $("header").hide();
+  $("#exp").hide();
+  $("#contact").hide();
+  $("footer").hide();
+  $("#loading-home").fadeOut(3000, function() {
+    $("header").fadeIn(1000);
+    $("#exp").show();
+    $("#contact").show();
+    $("footer").show();
+  });
+  $("#footer").hide(function() {
+    $("#about").hide(1000, function () {
+      $("#loading").hide(1000, function () {
+        $("#about").fadeIn(1000);
+        $("#footer").show();
+      })
     });
   });
   $("#about").show();
@@ -46,12 +60,15 @@
   ];
   var index = 0;
 
-  setInterval(change_up, 3000);
+  setInterval(change_up, 5000);
   function change_up() {
     index = (index + 1 < images.length) ? index + 1 : 0;
-    $("header").fadeOut(300, function () {
+    if ($("header").is(':hidden')) {
+      return;
+    }
+    $("header").fadeOut(600, function () {
       $(this).css('background-image', 'url(' + images[index] + ')')
-      $(this).fadeIn(300);
+      $(this).fadeIn(600);
     });
   }
 
