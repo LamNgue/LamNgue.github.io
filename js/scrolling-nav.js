@@ -1,6 +1,13 @@
+
 (function ($) {
   "use strict"; // Start of use strict
   // Smooth scrolling using jQuery easing
+  $("#about").hide(2000,function() {
+    $("#loading").hide(1000,function() {
+      $("#about").fadeIn(2000);
+    });
+  });
+  $("#about").show();
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
