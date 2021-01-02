@@ -1,17 +1,22 @@
 (function ($) {
   "use strict"; // Start of use strict
   // Smooth scrolling using jQuery easing
-  $("#loading-home").fadeOut(3000, function () {
-    $("header").show(function () {
-      $(this).css('background-image', 'url(' + 'http://static.asiawebdirect.com/m/.imaging/1140x760/website/bangkok/portals/vietnam/homepage/hanoi/top10/top10-hanoi-attractions/pagePropertiesImage.jpg' + ')')
-      $(this).css('background-size', 'cover');
-      $(this).css('opacity', 0.8);
-      fadeContent();
+  
+    $("footer").hide(function () {
+      $("#loading-home").fadeOut(3000, function () {
+        $("header").show(function () {
+          $(this).css('background-image', 'url(' + 'http://static.asiawebdirect.com/m/.imaging/1140x760/website/bangkok/portals/vietnam/homepage/hanoi/top10/top10-hanoi-attractions/pagePropertiesImage.jpg' + ')')
+          $(this).css('background-size', 'cover');
+          $(this).css('opacity', 0.8);
+          fadeContent();
+        });
+        $("#exp").show();
+        $("#contact").show();
+        $("footer").show();
+      });
     });
-    $("#exp").show();
-    $("#contact").show();
-    $("footer").show();
-  });
+   
+
 
   $("#footer").hide(function() {
     $("#about").hide(1000, function () {
