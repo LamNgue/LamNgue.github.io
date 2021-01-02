@@ -442,14 +442,15 @@
           <h2><b>Contact me</b></h2>
         </div>
         <div class="col-md-6" id="contact-form">
-          <form class="form-group" action="mailto:lnguye16@gustavus.edu" method="post" enctype="text/plain">
-            <textarea name="message" class="form-control" placeholder="Message" rows="5"></textarea>
-            <button class="btn btn-primary btn-block" type="submit">Send</button>
+          <form class="form-group" method="post" enctype="text/plain" action="contact.php">
+            <input name="email" type="email" class="form-control" placeholder="Your Email" required />
+            <textarea name="message" class="form-control" placeholder="Message" rows="5" required></textarea>
+            <input class="btn btn-primary btn-block" type="submit" value="Send" />
           </form>
         </div>
         <div class="col-md-6" id="messageMePls">
-          If you want to contact me, write your message below. Or you could contact me via social
-          medias below.
+          If you want to contact me, write a message on the left. Or you could contact me via social
+          medias below. I appreciate your visiting.
           <br/>
           <div class="btn-group inline">
             <button class="w3-black">
