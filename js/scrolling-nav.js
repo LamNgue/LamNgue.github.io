@@ -48,7 +48,7 @@
 
   var wordIdx = 0;
   var isDeleting = false;
-  var description = ["A senior student at Gustavus Adolphus College", "A passionate developer", "An avid learner", "A hard-worker", "A responsible team member"];
+  var description = ["A senior at Gustavus Adolphus College", "A passionate developer", "An avid learner", "A hard-worker", "A responsible team member"];
   var wait = parseInt(1000, 10);
   var text = "";
 
