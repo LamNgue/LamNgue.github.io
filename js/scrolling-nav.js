@@ -3,7 +3,7 @@
   // Smooth scrolling using jQuery easing
   
     $("footer").hide(function () {
-      $("#loading-home").fadeOut(2000, function () {
+      $("#loading-home").fadeOut(2500, function () {
         $("header").show(function () {
           $(this).css('background-image', 'url(' + 'http://static.asiawebdirect.com/m/.imaging/1140x760/website/bangkok/portals/vietnam/homepage/hanoi/top10/top10-hanoi-attractions/pagePropertiesImage.jpg' + ')')
           $(this).css('background-size', 'cover');
