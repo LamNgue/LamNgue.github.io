@@ -1,9 +1,10 @@
 (function ($) {
   "use strict"; // Start of use strict
   // Smooth scrolling using jQuery easing
-  
+    
     $("footer").hide(function () {
       $("#loading-home").fadeOut(2500, function () {
+        $("#mainNav").show();
         $("header").show(function () {
           $(this).css('background-image', 'url(' + 'http://static.asiawebdirect.com/m/.imaging/1140x760/website/bangkok/portals/vietnam/homepage/hanoi/top10/top10-hanoi-attractions/pagePropertiesImage.jpg' + ')')
           $(this).css('background-size', 'cover');
@@ -21,6 +22,7 @@
   $("#footer").hide(function() {
     $("#about").hide(1000, function () {
       $("#loading").hide(1000, function () {
+        $("#mainNav").show();
         $("#about").fadeIn(1000);
         $("#footer").show();
       })
