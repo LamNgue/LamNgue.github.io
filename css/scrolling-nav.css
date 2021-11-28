@@ -14,13 +14,17 @@ header {
   opacity: 0.8; */
 }
 
-#intro {
+#intro-header {
   padding: 154px 0 100px;
   width: 100%;
   height: 100%;
   min-width: 100%;
   min-height: 100%;
   display: block;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+  background-attachment: fixed;
 }
 
 #loading {
@@ -39,6 +43,7 @@ header {
 #loading-image {
   display: block;
   top: 25vh;
+  width: 60%;
   margin: auto;
   position: relative;
 }
@@ -121,7 +126,7 @@ button {
   margin-bottom: 10px;
 }
 
-#aboutMe > .txt-me{
+.txt-me{
   border-right: 0.2rem solid #777;
   font-size: 20px;
 }
@@ -153,6 +158,9 @@ button {
 	opacity: 0.8;
 }
 
+#about {
+  padding-bottom: 15%;
+}
 
 #exp {
   display: none;
@@ -184,5 +192,5 @@ footer {
 
 .myName {
   font-family: "Orbitron", sans-serif;
-  font-size: 45px;
+  font-size: 40px;
 }

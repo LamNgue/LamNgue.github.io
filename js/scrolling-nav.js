@@ -9,6 +9,10 @@
           $(this).css('background-image', 'url(' + 'http://static.asiawebdirect.com/m/.imaging/1140x760/website/bangkok/portals/vietnam/homepage/hanoi/top10/top10-hanoi-attractions/pagePropertiesImage.jpg' + ')')
           $(this).css('background-size', 'cover');
           $(this).css('opacity', 0.8);
+          $(this).css('position', 'relative');
+          $(this).css('height', '3%');
+          $(this).css('padding-bottom', '25%');
+          $(this).css('z-index', 1);
           fadeContent();
         });
         $("#exp").show();
@@ -55,7 +59,7 @@
 
   var wordIdx = 0;
   var isDeleting = false;
-  var description = ["A senior at Gustavus Adolphus College", "A passionate developer", "An avid learner", "A hard-worker", "A responsible team member"];
+  var description = ["A passionate developer", "An avid learner", "A hard-worker", "A responsible team member"];
   var wait = parseInt(1000, 10);
   var text = "";
 
